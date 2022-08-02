@@ -16,6 +16,12 @@
 		F75A80562899535700643587 /* PenquinPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80552899535700643587 /* PenquinPayTests.swift */; };
 		F75A80602899535700643587 /* PenquinPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A805F2899535700643587 /* PenquinPayUITests.swift */; };
 		F75A80622899535700643587 /* PenquinPayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80612899535700643587 /* PenquinPayUITestsLaunchTests.swift */; };
+		F75A80702899544200643587 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A806F2899544200643587 /* Endpoint.swift */; };
+		F75A80722899573D00643587 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80712899573D00643587 /* HTTPClient.swift */; };
+		F75A80742899A58F00643587 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80732899A58F00643587 /* RequestMethod.swift */; };
+		F75A80782899A66D00643587 /* CurrencyConverterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80772899A66D00643587 /* CurrencyConverterAPI.swift */; };
+		F75A807A2899B6C600643587 /* CurrencyConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80792899B6C600643587 /* CurrencyConverterService.swift */; };
+		F75A807D2899B97500643587 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A807C2899B97500643587 /* CurrencyConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		F75A805B2899535700643587 /* PenquinPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenquinPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75A805F2899535700643587 /* PenquinPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenquinPayUITests.swift; sourceTree = "<group>"; };
 		F75A80612899535700643587 /* PenquinPayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenquinPayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F75A806F2899544200643587 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		F75A80712899573D00643587 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F75A80732899A58F00643587 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		F75A80772899A66D00643587 /* CurrencyConverterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterAPI.swift; sourceTree = "<group>"; };
+		F75A80792899B6C600643587 /* CurrencyConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterService.swift; sourceTree = "<group>"; };
+		F75A807C2899B97500643587 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		F75A803D2899535500643587 /* PenquinPay */ = {
 			isa = PBXGroup;
 			children = (
+				F75A807B2899B95E00643587 /* Model */,
+				F75A806E2899541C00643587 /* Network */,
 				F75A803E2899535500643587 /* AppDelegate.swift */,
 				F75A80402899535500643587 /* SceneDelegate.swift */,
 				F75A80422899535500643587 /* ViewController.swift */,
@@ -125,6 +139,42 @@
 				F75A80612899535700643587 /* PenquinPayUITestsLaunchTests.swift */,
 			);
 			path = PenquinPayUITests;
+			sourceTree = "<group>";
+		};
+		F75A806E2899541C00643587 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F75A80762899A63C00643587 /* Service */,
+				F75A80752899A5F800643587 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F75A80752899A5F800643587 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F75A806F2899544200643587 /* Endpoint.swift */,
+				F75A80712899573D00643587 /* HTTPClient.swift */,
+				F75A80732899A58F00643587 /* RequestMethod.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F75A80762899A63C00643587 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F75A80772899A66D00643587 /* CurrencyConverterAPI.swift */,
+				F75A80792899B6C600643587 /* CurrencyConverterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F75A807B2899B95E00643587 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F75A807C2899B97500643587 /* CurrencyConverter.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75A807D2899B97500643587 /* CurrencyConverter.swift in Sources */,
+				F75A80782899A66D00643587 /* CurrencyConverterAPI.swift in Sources */,
 				F75A80432899535500643587 /* ViewController.swift in Sources */,
+				F75A80722899573D00643587 /* HTTPClient.swift in Sources */,
 				F75A803F2899535500643587 /* AppDelegate.swift in Sources */,
+				F75A80702899544200643587 /* Endpoint.swift in Sources */,
+				F75A807A2899B6C600643587 /* CurrencyConverterService.swift in Sources */,
+				F75A80742899A58F00643587 /* RequestMethod.swift in Sources */,
 				F75A80412899535500643587 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
