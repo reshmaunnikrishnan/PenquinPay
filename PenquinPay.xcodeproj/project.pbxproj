@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F75A803F2899535500643587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A803E2899535500643587 /* AppDelegate.swift */; };
+		F75A80412899535500643587 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80402899535500643587 /* SceneDelegate.swift */; };
+		F75A80432899535500643587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80422899535500643587 /* ViewController.swift */; };
+		F75A80462899535500643587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75A80442899535500643587 /* Main.storyboard */; };
+		F75A80482899535700643587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75A80472899535700643587 /* Assets.xcassets */; };
+		F75A804B2899535700643587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75A80492899535700643587 /* LaunchScreen.storyboard */; };
+		F75A80562899535700643587 /* PenquinPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80552899535700643587 /* PenquinPayTests.swift */; };
+		F75A80602899535700643587 /* PenquinPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A805F2899535700643587 /* PenquinPayUITests.swift */; };
+		F75A80622899535700643587 /* PenquinPayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80612899535700643587 /* PenquinPayUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F75A80522899535700643587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F75A80332899535500643587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F75A803A2899535500643587;
+			remoteInfo = PenquinPay;
+		};
+		F75A805C2899535700643587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F75A80332899535500643587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F75A803A2899535500643587;
+			remoteInfo = PenquinPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F75A803B2899535500643587 /* PenquinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenquinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75A803E2899535500643587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F75A80402899535500643587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F75A80422899535500643587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F75A80452899535500643587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F75A80472899535700643587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F75A804A2899535700643587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F75A804C2899535700643587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75A80512899535700643587 /* PenquinPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenquinPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75A80552899535700643587 /* PenquinPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenquinPayTests.swift; sourceTree = "<group>"; };
+		F75A805B2899535700643587 /* PenquinPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenquinPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75A805F2899535700643587 /* PenquinPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenquinPayUITests.swift; sourceTree = "<group>"; };
+		F75A80612899535700643587 /* PenquinPayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenquinPayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F75A80382899535500643587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75A804E2899535700643587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75A80582899535700643587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F75A80322899535500643587 = {
+			isa = PBXGroup;
+			children = (
+				F75A803D2899535500643587 /* PenquinPay */,
+				F75A80542899535700643587 /* PenquinPayTests */,
+				F75A805E2899535700643587 /* PenquinPayUITests */,
+				F75A803C2899535500643587 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F75A803C2899535500643587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F75A803B2899535500643587 /* PenquinPay.app */,
+				F75A80512899535700643587 /* PenquinPayTests.xctest */,
+				F75A805B2899535700643587 /* PenquinPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F75A803D2899535500643587 /* PenquinPay */ = {
+			isa = PBXGroup;
+			children = (
+				F75A803E2899535500643587 /* AppDelegate.swift */,
+				F75A80402899535500643587 /* SceneDelegate.swift */,
+				F75A80422899535500643587 /* ViewController.swift */,
+				F75A80442899535500643587 /* Main.storyboard */,
+				F75A80472899535700643587 /* Assets.xcassets */,
+				F75A80492899535700643587 /* LaunchScreen.storyboard */,
+				F75A804C2899535700643587 /* Info.plist */,
+			);
+			path = PenquinPay;
+			sourceTree = "<group>";
+		};
+		F75A80542899535700643587 /* PenquinPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				F75A80552899535700643587 /* PenquinPayTests.swift */,
+			);
+			path = PenquinPayTests;
+			sourceTree = "<group>";
+		};
+		F75A805E2899535700643587 /* PenquinPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F75A805F2899535700643587 /* PenquinPayUITests.swift */,
+				F75A80612899535700643587 /* PenquinPayUITestsLaunchTests.swift */,
+			);
+			path = PenquinPayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F75A803A2899535500643587 /* PenquinPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F75A80652899535700643587 /* Build configuration list for PBXNativeTarget "PenquinPay" */;
+			buildPhases = (
+				F75A80372899535500643587 /* Sources */,
+				F75A80382899535500643587 /* Frameworks */,
+				F75A80392899535500643587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PenquinPay;
+			productName = PenquinPay;
+			productReference = F75A803B2899535500643587 /* PenquinPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F75A80502899535700643587 /* PenquinPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F75A80682899535700643587 /* Build configuration list for PBXNativeTarget "PenquinPayTests" */;
+			buildPhases = (
+				F75A804D2899535700643587 /* Sources */,
+				F75A804E2899535700643587 /* Frameworks */,
+				F75A804F2899535700643587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F75A80532899535700643587 /* PBXTargetDependency */,
+			);
+			name = PenquinPayTests;
+			productName = PenquinPayTests;
+			productReference = F75A80512899535700643587 /* PenquinPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F75A805A2899535700643587 /* PenquinPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F75A806B2899535700643587 /* Build configuration list for PBXNativeTarget "PenquinPayUITests" */;
+			buildPhases = (
+				F75A80572899535700643587 /* Sources */,
+				F75A80582899535700643587 /* Frameworks */,
+				F75A80592899535700643587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F75A805D2899535700643587 /* PBXTargetDependency */,
+			);
+			name = PenquinPayUITests;
+			productName = PenquinPayUITests;
+			productReference = F75A805B2899535700643587 /* PenquinPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F75A80332899535500643587 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F75A803A2899535500643587 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					F75A80502899535700643587 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = F75A803A2899535500643587;
+					};
+					F75A805A2899535700643587 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = F75A803A2899535500643587;
+					};
+				};
+			};
+			buildConfigurationList = F75A80362899535500643587 /* Build configuration list for PBXProject "PenquinPay" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F75A80322899535500643587;
+			productRefGroup = F75A803C2899535500643587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F75A803A2899535500643587 /* PenquinPay */,
+				F75A80502899535700643587 /* PenquinPayTests */,
+				F75A805A2899535700643587 /* PenquinPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F75A80392899535500643587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75A804B2899535700643587 /* LaunchScreen.storyboard in Resources */,
+				F75A80482899535700643587 /* Assets.xcassets in Resources */,
+				F75A80462899535500643587 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75A804F2899535700643587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75A80592899535700643587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F75A80372899535500643587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75A80432899535500643587 /* ViewController.swift in Sources */,
+				F75A803F2899535500643587 /* AppDelegate.swift in Sources */,
+				F75A80412899535500643587 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75A804D2899535700643587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75A80562899535700643587 /* PenquinPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75A80572899535700643587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75A80622899535700643587 /* PenquinPayUITestsLaunchTests.swift in Sources */,
+				F75A80602899535700643587 /* PenquinPayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F75A80532899535700643587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F75A803A2899535500643587 /* PenquinPay */;
+			targetProxy = F75A80522899535700643587 /* PBXContainerItemProxy */;
+		};
+		F75A805D2899535700643587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F75A803A2899535500643587 /* PenquinPay */;
+			targetProxy = F75A805C2899535700643587 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F75A80442899535500643587 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F75A80452899535500643587 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F75A80492899535700643587 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F75A804A2899535700643587 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F75A80632899535700643587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F75A80642899535700643587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F75A80662899535700643587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PenquinPay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.PenquinPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F75A80672899535700643587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PenquinPay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.PenquinPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F75A80692899535700643587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.PenquinPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenquinPay.app/PenquinPay";
+			};
+			name = Debug;
+		};
+		F75A806A2899535700643587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.PenquinPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenquinPay.app/PenquinPay";
+			};
+			name = Release;
+		};
+		F75A806C2899535700643587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.PenquinPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PenquinPay;
+			};
+			name = Debug;
+		};
+		F75A806D2899535700643587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.PenquinPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PenquinPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F75A80362899535500643587 /* Build configuration list for PBXProject "PenquinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75A80632899535700643587 /* Debug */,
+				F75A80642899535700643587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F75A80652899535700643587 /* Build configuration list for PBXNativeTarget "PenquinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75A80662899535700643587 /* Debug */,
+				F75A80672899535700643587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F75A80682899535700643587 /* Build configuration list for PBXNativeTarget "PenquinPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75A80692899535700643587 /* Debug */,
+				F75A806A2899535700643587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F75A806B2899535700643587 /* Build configuration list for PBXNativeTarget "PenquinPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75A806C2899535700643587 /* Debug */,
+				F75A806D2899535700643587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F75A80332899535500643587 /* Project object */;
+}
