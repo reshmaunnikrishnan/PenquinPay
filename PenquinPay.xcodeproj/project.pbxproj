@@ -85,6 +85,7 @@
 		F75A809C289C22C800643587 /* MockCredentialsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCredentialsValidator.swift; sourceTree = "<group>"; };
 		F75A809F289C238300643587 /* CurrencyConverterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModelTests.swift; sourceTree = "<group>"; };
 		F75A80A3289C395000643587 /* ConversionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionDetail.swift; sourceTree = "<group>"; };
+		F75A80A5289C3B8000643587 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +136,7 @@
 		F75A803D2899535500643587 /* PenquinPay */ = {
 			isa = PBXGroup;
 			children = (
+				F75A80A5289C3B8000643587 /* ReadMe.md */,
 				F75A8081289A621200643587 /* App */,
 				F75A808C289B155100643587 /* Extension */,
 				F75A8094289C143500643587 /* ResultView */,

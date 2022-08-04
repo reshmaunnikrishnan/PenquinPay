@@ -55,8 +55,7 @@ final class CurrencyConverterViewModel {
         let localCurrency = localCurrency()
         let integerMoney = moneyToSend.binaryToInt
 
-        if recipeintCurrencyType.isEmpty {
-            self.state = .error
+        if recipeintCurrencyType.isEmpty || moneyToSend.isEmpty {
             return
         }
         
