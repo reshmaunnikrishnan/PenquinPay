@@ -13,8 +13,8 @@ It showcases a form which holds the basic info, as well as the money conversion 
   * Added Dependency Injection in ViewModel
   * Added tests for ViewModel.
 
-### Missing:
-  * A detailed testing,
-  * more comments or explanations
-  * better ui exxperience
-  * Due to time crunch, i couldnt completely check with all the conditions required on the CurrencyConverterView. 
+Missing:
+A detailed testing,
+more comments or explanations
+Dependency Injection missing in ViewController
+Due to time crunch, i couldnt  completely check with all the conditions required on the CurrencyConverterView. 

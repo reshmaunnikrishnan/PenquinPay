@@ -155,9 +155,12 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKd-rI-ZYA">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKd-rI-ZYA">
                     <rect key="frame" x="155" y="707" width="104.5" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104.5" id="uwy-LI-eVB"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Send Money"/>
                     <connections>
@@ -175,19 +178,20 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Qx-Ot-nBh" secondAttribute="trailing" constant="20" id="7Di-6f-SsZ"/>
                 <constraint firstItem="Drf-sb-CGd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="7J1-w6-psS"/>
                 <constraint firstItem="YIs-Zb-wQ1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="72" id="CBR-aH-Toc"/>
+                <constraint firstItem="GKd-rI-ZYA" firstAttribute="top" secondItem="TAL-Ra-Wnn" secondAttribute="bottom" constant="98" id="CSS-Cv-k5j"/>
                 <constraint firstItem="1jO-4s-au3" firstAttribute="top" secondItem="Drf-sb-CGd" secondAttribute="bottom" id="DF9-dS-0nu"/>
                 <constraint firstItem="HtE-fp-V7q" firstAttribute="leading" secondItem="v4i-fp-aL6" secondAttribute="leading" id="ESJ-3x-A1K"/>
                 <constraint firstItem="HtE-fp-V7q" firstAttribute="top" secondItem="v4i-fp-aL6" secondAttribute="bottom" constant="8" symbolic="YES" id="FiA-Rw-Fx1"/>
                 <constraint firstItem="0Qx-Ot-nBh" firstAttribute="top" secondItem="7aS-tT-OBO" secondAttribute="bottom" constant="15" id="GnH-hc-F3d"/>
                 <constraint firstItem="1jO-4s-au3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="Ies-pt-dap"/>
                 <constraint firstItem="dgo-yF-h74" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="Ilv-j7-VLY"/>
-                <constraint firstItem="TcF-wn-RSB" firstAttribute="top" secondItem="HtE-fp-V7q" secondAttribute="bottom" constant="133" id="Ljs-z3-g3K"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TAL-Ra-Wnn" secondAttribute="trailing" constant="9" id="MXO-tW-uqX"/>
                 <constraint firstItem="10J-kE-T1I" firstAttribute="leading" secondItem="xgm-ZU-cde" secondAttribute="trailing" constant="91" id="NS0-8W-apY"/>
                 <constraint firstItem="10J-kE-T1I" firstAttribute="top" secondItem="0Qx-Ot-nBh" secondAttribute="bottom" constant="17" id="OLF-0q-jS9"/>
                 <constraint firstItem="TAL-Ra-Wnn" firstAttribute="leading" secondItem="fPh-7o-ZQI" secondAttribute="trailing" id="QtO-ew-zVF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HtE-fp-V7q" secondAttribute="trailing" constant="20" id="ReW-5j-TBG"/>
                 <constraint firstItem="TcF-wn-RSB" firstAttribute="leading" secondItem="1jO-4s-au3" secondAttribute="trailing" id="SmV-I2-caV"/>
+                <constraint firstItem="GKd-rI-ZYA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="155" id="Vrd-PV-MYj"/>
                 <constraint firstItem="v4i-fp-aL6" firstAttribute="top" secondItem="10J-kE-T1I" secondAttribute="bottom" constant="30" id="XHX-cS-2D5"/>
                 <constraint firstItem="Drf-sb-CGd" firstAttribute="top" secondItem="dgo-yF-h74" secondAttribute="bottom" constant="168" id="YQN-te-mBh"/>
                 <constraint firstItem="xgm-ZU-cde" firstAttribute="top" secondItem="N1O-mU-vpx" secondAttribute="bottom" constant="28" id="Zai-tC-Ygr"/>
@@ -203,6 +207,7 @@
                 <constraint firstItem="N1O-mU-vpx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="jcT-j5-I7Z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TcF-wn-RSB" secondAttribute="trailing" constant="9" id="k59-Bt-B3C"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7aS-tT-OBO" secondAttribute="trailing" constant="20" id="leZ-B9-xAg"/>
+                <constraint firstItem="TcF-wn-RSB" firstAttribute="top" secondItem="Drf-sb-CGd" secondAttribute="top" id="mkm-PW-g2e"/>
                 <constraint firstItem="dgo-yF-h74" firstAttribute="top" secondItem="xgm-ZU-cde" secondAttribute="bottom" constant="41" id="n0U-JP-8we"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="10J-kE-T1I" secondAttribute="trailing" constant="20" id="nFd-di-OPj"/>
                 <constraint firstItem="TAL-Ra-Wnn" firstAttribute="leading" secondItem="6vO-DI-BrQ" secondAttribute="trailing" id="p6u-2e-X10"/>
@@ -223,6 +228,9 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
