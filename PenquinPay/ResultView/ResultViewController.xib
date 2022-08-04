@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultViewController" customModule="PenquinPay" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="DAJ-8p-11R" id="Ngx-8W-lFA"/>
+                <outlet property="titleLabel" destination="I8q-gD-ejy" id="RaI-QD-Nzn"/>
+                <outlet property="view" destination="iN0-l3-epB" id="RGX-yF-W2A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8q-gD-ejy">
+                    <rect key="frame" x="135" y="324" width="144.5" height="111"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="111" id="3f4-Fc-FmX"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Woohooo!!">
+                            <attributes>
+                                <font key="NSFont" size="30" name="SFMono-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAJ-8p-11R">
+                    <rect key="frame" x="7" y="471" width="400" height="28"/>
+                    <attributedString key="attributedText">
+                        <fragment content="The money is been sent successfully!">
+                            <attributes>
+                                <font key="NSFont" size="24" name="SFMono-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DAJ-8p-11R" secondAttribute="trailing" constant="7" id="PV8-vw-WPU"/>
+                <constraint firstItem="I8q-gD-ejy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="280" id="V3g-lE-T4R"/>
+                <constraint firstItem="I8q-gD-ejy" firstAttribute="centerX" secondItem="DAJ-8p-11R" secondAttribute="centerX" id="ZSe-py-BNv"/>
+                <constraint firstItem="DAJ-8p-11R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="7" id="g0A-Ja-XVo"/>
+                <constraint firstItem="DAJ-8p-11R" firstAttribute="top" secondItem="I8q-gD-ejy" secondAttribute="bottom" constant="36" id="sHF-bI-ZbK"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
