@@ -19,6 +19,7 @@
                 <outlet property="phoneNumberText" destination="v4i-fp-aL6" id="z6l-Fv-rb5"/>
                 <outlet property="recieveMoneyText" destination="6vO-DI-BrQ" id="ID8-mJ-cZw"/>
                 <outlet property="recipientCurrencyTypeField" destination="TAL-Ra-Wnn" id="qtx-IY-WuJ"/>
+                <outlet property="sendButton" destination="GKd-rI-ZYA" id="LwM-jT-mIC"/>
                 <outlet property="sendMoneyText" destination="1jO-4s-au3" id="T77-IP-Vj2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -42,16 +43,25 @@
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7aS-tT-OBO">
                     <rect key="frame" x="219" y="109" width="175" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="4Td-bO-FO2"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4i-fp-aL6">
                     <rect key="frame" x="219" y="269" width="175" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="dNN-Iw-yHW"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qx-Ot-nBh">
                     <rect key="frame" x="219" y="158" width="175" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="dzf-Da-m0D"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -122,9 +132,6 @@
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtE-fp-V7q">
                     <rect key="frame" x="219" y="311" width="175" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="175" id="IHB-EA-Y5V"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -141,13 +148,20 @@
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcF-wn-RSB">
                     <rect key="frame" x="219" y="465" width="186" height="56"/>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="e12-WK-8or"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKd-rI-ZYA">
+                    <rect key="frame" x="155" y="707" width="104.5" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Send Money"/>
                     <connections>
-                        <action selector="conversionTapped:" destination="-1" eventType="touchUpInside" id="fdh-ok-Zhk"/>
+                        <action selector="sendMoneyButtonTapped:" destination="-1" eventType="touchUpInside" id="NNZ-sI-M6C"/>
                     </connections>
                 </button>
             </subviews>
@@ -162,6 +176,7 @@
                 <constraint firstItem="Drf-sb-CGd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="7J1-w6-psS"/>
                 <constraint firstItem="YIs-Zb-wQ1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="72" id="CBR-aH-Toc"/>
                 <constraint firstItem="1jO-4s-au3" firstAttribute="top" secondItem="Drf-sb-CGd" secondAttribute="bottom" id="DF9-dS-0nu"/>
+                <constraint firstItem="HtE-fp-V7q" firstAttribute="leading" secondItem="v4i-fp-aL6" secondAttribute="leading" id="ESJ-3x-A1K"/>
                 <constraint firstItem="HtE-fp-V7q" firstAttribute="top" secondItem="v4i-fp-aL6" secondAttribute="bottom" constant="8" symbolic="YES" id="FiA-Rw-Fx1"/>
                 <constraint firstItem="0Qx-Ot-nBh" firstAttribute="top" secondItem="7aS-tT-OBO" secondAttribute="bottom" constant="15" id="GnH-hc-F3d"/>
                 <constraint firstItem="1jO-4s-au3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="Ies-pt-dap"/>
@@ -183,6 +198,7 @@
                 <constraint firstItem="fPh-7o-ZQI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="dpe-vY-Z79"/>
                 <constraint firstItem="6vO-DI-BrQ" firstAttribute="top" secondItem="fPh-7o-ZQI" secondAttribute="bottom" id="gXa-C6-NiM"/>
                 <constraint firstItem="TAL-Ra-Wnn" firstAttribute="top" secondItem="fPh-7o-ZQI" secondAttribute="top" id="hR0-EC-NHV"/>
+                <constraint firstItem="TcF-wn-RSB" firstAttribute="bottom" secondItem="1jO-4s-au3" secondAttribute="bottom" id="iN3-Ho-eju"/>
                 <constraint firstItem="YIs-Zb-wQ1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="iyF-mM-oiR"/>
                 <constraint firstItem="N1O-mU-vpx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="jcT-j5-I7Z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TcF-wn-RSB" secondAttribute="trailing" constant="9" id="k59-Bt-B3C"/>

@@ -21,21 +21,6 @@ struct ConversionDetail {
     let value: Int
 }
 
-protocol CurrencyConverterViewModelInput : AnyObject{
-    var state: ConverterViewModelState {get}
-    var conversionResponse: CurrencyConverter? {get}
-    var currencyConverterService:CurrencyConverterServiceable {get}
-    var country: String { get }
-    var phoneNumber: String { get }
-    var phoneNumberStatus: String { get }
-    var validationResult :PassthroughSubject<Void, Error> { get }
-    
-    func convertValue(detail: ConversionDetail)
-    func validateCredentials()
-}
-
-
-
 final class CurrencyConverterViewModel {
     @Published private(set) var state: ConverterViewModelState = .loading
     @Published private(set) var conversionResponse: CurrencyConverter?
@@ -46,8 +31,6 @@ final class CurrencyConverterViewModel {
     @Published var moneyToSend: String = ""
     @Published var recipeintCurrencyType: String = ""
 
-
-    
     let validationResult = PassthroughSubject<Void, Error>()
     
     internal let currencyConverterService: CurrencyConverterServiceable
@@ -68,23 +51,39 @@ final class CurrencyConverterViewModel {
         let number = country.getNumberOfDigitsAfterPrefix()
         return number
     }
-
     
-    func convertCurrencyValue() {
+    func convertCurrencyValue(completion: @escaping () -> Void) {
         let localCurrency = localCurrency()
         let integerMoney = moneyToSend.binaryToInt
+
+        if recipeintCurrencyType.isEmpty {
+            self.state = .error
+            return
+        }
+        
         let detail = ConversionDetail(fromCurrencyType: localCurrency , toCurrencyType: recipeintCurrencyType, value: integerMoney)
         fetchData(data: detail) {[weak self] result in
             guard let self = self else { return }
             switch result {
               case .failure(let error):
-                self.showErrorAlert(error: error)
+                print(error)
                 self.state = .error
               case .success(let response):
                 self.conversionResponse = response
                 self.state = .finishedLoading
+                completion()
             }
         }
+    }
+    
+    func binaryRecipientValue() -> String {
+        let value = self.conversionResponse?.rates.filter{ $0.key == recipeintCurrencyType }
+        let doubleMoney = moneyToSend.binaryToDouble
+
+        let generatedAmount = Double(value?.first?.value ?? 0) * doubleMoney
+        let generatedAmountInteger = Int(generatedAmount)
+        let binaryAmount = generatedAmountInteger.binaryString
+        return binaryAmount
     }
     
     func localCurrency() -> String {
@@ -93,19 +92,14 @@ final class CurrencyConverterViewModel {
         return localCurrencySymbol
     }
     
-    private func fetchData(data: ConversionDetail, completion: @escaping (Result<CurrencyConverter, RequestError>) -> Void) {
+     func fetchData(data: ConversionDetail, completion: @escaping (Result<CurrencyConverter, RequestError>) -> Void) {
         Task(priority: .background) {
             let id = "cd9bc7a433ee48c0b97db5ba76ae1705"
             let result = await currencyConverterService.convert(id: id, details: data)
             completion(result)
         }
     }
-    
-    private func showErrorAlert(error: Error) {
-        
-    }
 }
-
 
 enum PhoneNumberError: Error {
     case invalid
