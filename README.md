@@ -17,4 +17,4 @@ Missing:
 A detailed testing,
 more comments or explanations
 Dependency Injection missing in ViewController
-Due to time crunch, i had to completely check with all the conditions required on the CurrencyConverterView. 
+Due to time crunch, i couldnt  completely check with all the conditions required on the CurrencyConverterView. 
