@@ -10,7 +10,7 @@ import Combine
 
 final class CurrencyConverterViewController: UIViewController {
     
-    //MARK:- Properties
+    //MARK: - Properties
     @IBOutlet weak var firstNameText: UITextField!
     @IBOutlet weak var lastNameText: UITextField!
     @IBOutlet weak var phoneNumberText: UITextField!
@@ -25,7 +25,7 @@ final class CurrencyConverterViewController: UIViewController {
     var viewModel: CurrencyConverterViewModel
     private var bindings = Set<AnyCancellable>()
 
-    //MARK:- Initializers
+    //MARK: - Initializers
     init(viewModel: CurrencyConverterViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -40,6 +40,7 @@ final class CurrencyConverterViewController: UIViewController {
         self.present(resultVC, animated: true)
     }
     
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDropDown()
@@ -47,7 +48,7 @@ final class CurrencyConverterViewController: UIViewController {
         setupUI()
     }
 
-    //MARK:- Private Methods
+    //MARK: - Private Methods
     private func setUpBindings() {
         
         func bindViewToViewModel() {
@@ -89,7 +90,7 @@ final class CurrencyConverterViewController: UIViewController {
             
         }
         
-        func bindViewModelToView() {
+        func bindViewModelToView(){
           
             viewModel.$phoneNumberStatus
                            .receive(on: RunLoop.main)
@@ -130,6 +131,7 @@ final class CurrencyConverterViewController: UIViewController {
         sendButton.isEnabled = false
         sendButton.alpha = 0.3
     }
+    
     private func setupDropDown() {
         countryDropDown.placeholder = "Country"
 

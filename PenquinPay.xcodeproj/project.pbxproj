@@ -33,7 +33,7 @@
 		F75A809B289C20F700643587 /* MockCurrentConversionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809A289C20F700643587 /* MockCurrentConversionService.swift */; };
 		F75A809D289C22C800643587 /* MockCredentialsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809C289C22C800643587 /* MockCredentialsValidator.swift */; };
 		F75A80A0289C238300643587 /* CurrencyConverterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809F289C238300643587 /* CurrencyConverterViewModelTests.swift */; };
-		F75A80A2289C365200643587 /* Conversion.json in Resources */ = {isa = PBXBuildFile; fileRef = F75A80A1289C365200643587 /* Conversion.json */; };
+		F75A80A4289C395000643587 /* ConversionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80A3289C395000643587 /* ConversionDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +84,7 @@
 		F75A809A289C20F700643587 /* MockCurrentConversionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrentConversionService.swift; sourceTree = "<group>"; };
 		F75A809C289C22C800643587 /* MockCredentialsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCredentialsValidator.swift; sourceTree = "<group>"; };
 		F75A809F289C238300643587 /* CurrencyConverterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModelTests.swift; sourceTree = "<group>"; };
-		F75A80A1289C365200643587 /* Conversion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Conversion.json; sourceTree = "<group>"; };
+		F75A80A3289C395000643587 /* ConversionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,6 @@
 				F75A809E289C235400643587 /* Tests */,
 				F75A8099289C20D300643587 /* Mock */,
 				F75A80552899535700643587 /* PenquinPayTests.swift */,
-				F75A80A1289C365200643587 /* Conversion.json */,
 			);
 			path = PenquinPayTests;
 			sourceTree = "<group>";
@@ -210,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				F75A807F2899C9B600643587 /* CurrencyConverterViewModel.swift */,
+				F75A808F289B910E00643587 /* CountryDetails.swift */,
+				F75A80A3289C395000643587 /* ConversionDetail.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -227,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				F75A8093289C142100643587 /* CustomView */,
-				F75A808F289B910E00643587 /* CountryDetails.swift */,
 				F75A8083289A62A700643587 /* CurrencyConverterViewController.swift */,
 				F75A8084289A62A700643587 /* CurrencyConverterViewController.xib */,
 			);
@@ -397,7 +397,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75A80A2289C365200643587 /* Conversion.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +424,7 @@
 				F75A80802899C9B600643587 /* CurrencyConverterViewModel.swift in Sources */,
 				F75A8088289A933F00643587 /* DropDownView.swift in Sources */,
 				F75A808E289B159400643587 /* UITextField+Publisher.swift in Sources */,
+				F75A80A4289C395000643587 /* ConversionDetail.swift in Sources */,
 				F75A803F2899535500643587 /* AppDelegate.swift in Sources */,
 				F75A80702899544200643587 /* Endpoint.swift in Sources */,
 				F75A807A2899B6C600643587 /* CurrencyConverterService.swift in Sources */,

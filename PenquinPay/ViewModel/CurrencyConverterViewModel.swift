@@ -15,13 +15,12 @@ enum ConverterViewModelState: Equatable {
     case error
 }
 
-struct ConversionDetail {
-    let fromCurrencyType: String
-    let toCurrencyType: String
-    let value: Int
+enum PhoneNumberError: Error {
+    case invalid
 }
 
 final class CurrencyConverterViewModel {
+    // MARK: - Properties
     @Published private(set) var state: ConverterViewModelState = .loading
     @Published private(set) var conversionResponse: CurrencyConverter?
     
@@ -38,13 +37,13 @@ final class CurrencyConverterViewModel {
     private var currentConversionQuery: String = " "
     private let credentialsValidator: CredentialsValidatorProtocol
 
+    // MARK: - Initilaizer
     init(currencyConverterService: CurrencyConverterServiceable = CurrencyConverterService(), credentialsValidator: CredentialsValidatorProtocol = CredentialsValidator()) {
         self.currencyConverterService = currencyConverterService
         self.credentialsValidator = credentialsValidator
     }
     
-    // MARK: Methods
-
+    // MARK: - Methods
     func getMinimumDigits(for place: String) -> Int {
         let country = Country.allCases.filter{$0.rawValue == place}.first
         guard let country = country else {return 0}
@@ -99,10 +98,6 @@ final class CurrencyConverterViewModel {
             completion(result)
         }
     }
-}
-
-enum PhoneNumberError: Error {
-    case invalid
 }
 
 // MARK: - CredentialsValidatorProtocol
