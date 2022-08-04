@@ -15,8 +15,7 @@ struct CurrencyConverterService: HTTPClient, CurrencyConverterServiceable {
 
     func convert(id: String, details: ConversionDetail) async -> Result<CurrencyConverter, RequestError> {
         
-        return await sendRequest(endpoint: CurrencyConverterAPI.convert(id: id, value: details.value, from: details.fromCurrencyType, to: details
-            .toCurrencyType), type: CurrencyConverter.self)
+        return await sendRequest(endpoint: CurrencyConverterAPI.convert(id: id), type: CurrencyConverter.self)
     }
     
 }

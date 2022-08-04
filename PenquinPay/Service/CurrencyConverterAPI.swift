@@ -8,15 +8,15 @@
 import Foundation
 
 enum CurrencyConverterAPI {
-    case convert(id: String, value: Int, from: String, to: String)
+    case convert(id: String)
 }
 
 extension CurrencyConverterAPI: Endpoint {
     
     var path: String {
         switch self {
-        case .convert(id: _ ,value: let value, from: let currrencyA, to: let currencyB):
-            return "api/convert/\(value)/\(currrencyA)/\(currencyB)"
+        case .convert:
+            return "/api/latest.json"
         }
     }
     
@@ -24,17 +24,22 @@ extension CurrencyConverterAPI: Endpoint {
         return .get
     }
     
-    var headers: [String : String]? {
+    var queryItems: [URLQueryItem]? {
         switch self {
-        case .convert(id: let api):
-            return ["app_id": api.id,
-                    "prettyprint" : "true"]
+        case .convert(id: let appId):
+            return [URLQueryItem(name: "app_id", value: appId)]
         }
     }
     
-    var body: [String : String]? {
-        return nil
-    }
-    
+    var header: [String: String]? {
+         // Access Token to use in Bearer header
+         
+         switch self {
+         case .convert:
+             return [
+                 "Content-Type": "application/json;charset=utf-8"
+             ]
+         }
+     }
     
 }
