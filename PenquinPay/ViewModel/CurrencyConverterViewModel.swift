@@ -15,8 +15,10 @@ enum ConverterViewModelState: Equatable {
     case error
 }
 
-enum PhoneNumberError: Error {
-    case invalid
+enum FormError: Error {
+    case invalidPhoneNumber
+    case noReciepientCountryProvided
+    case FormIsNotFilledCompletely
 }
 
 final class CurrencyConverterViewModel {
@@ -32,15 +34,13 @@ final class CurrencyConverterViewModel {
 
     let validationResult = PassthroughSubject<Void, Error>()
     
-    internal let currencyConverterService: CurrencyConverterServiceable
+    let currencyConverterService: CurrencyConverterServiceable?
     private var bindings = Set<AnyCancellable>()
     private var currentConversionQuery: String = " "
-    private let credentialsValidator: CredentialsValidatorProtocol
 
     // MARK: - Initilaizer
-    init(currencyConverterService: CurrencyConverterServiceable = CurrencyConverterService(), credentialsValidator: CredentialsValidatorProtocol = CredentialsValidator()) {
+    init(currencyConverterService: CurrencyConverterServiceable) {
         self.currencyConverterService = currencyConverterService
-        self.credentialsValidator = credentialsValidator
     }
     
     // MARK: - Methods

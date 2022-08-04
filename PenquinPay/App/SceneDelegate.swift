@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         ///  Create a view hierarchy programmatically
 
-        let vm = CurrencyConverterViewModel()
+        let service = CurrencyConverterService()
+        let vm = CurrencyConverterViewModel(currencyConverterService: service)
         let currencyConverterVC = CurrencyConverterViewController(viewModel: vm)
         let navigationController = UINavigationController(rootViewController: currencyConverterVC)
         window.rootViewController = navigationController

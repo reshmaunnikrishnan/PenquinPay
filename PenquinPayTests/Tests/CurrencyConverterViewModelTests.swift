@@ -14,7 +14,6 @@ class CurrencyConverterViewModelTests: XCTestCase {
 
     private var subject: CurrencyConverterViewModel!
     private var mockService: MockCurrencyConvertService!
-    private var mockValidator: MockCredentialsValidator!
     private var cancellables: Set<AnyCancellable> = []
     
     
@@ -22,8 +21,7 @@ class CurrencyConverterViewModelTests: XCTestCase {
         super.setUp()
 
         mockService = MockCurrencyConvertService()
-        mockValidator = MockCredentialsValidator()
-        subject = CurrencyConverterViewModel(currencyConverterService: mockService, credentialsValidator: mockValidator)
+        subject = CurrencyConverterViewModel(currencyConverterService: mockService)
     }
     
     
@@ -31,7 +29,6 @@ class CurrencyConverterViewModelTests: XCTestCase {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
         mockService = nil
-        mockValidator = nil
         subject = nil
 
         super.tearDown()
