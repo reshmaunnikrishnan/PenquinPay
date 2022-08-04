@@ -33,6 +33,7 @@
 		F75A809B289C20F700643587 /* MockCurrentConversionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809A289C20F700643587 /* MockCurrentConversionService.swift */; };
 		F75A809D289C22C800643587 /* MockCredentialsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809C289C22C800643587 /* MockCredentialsValidator.swift */; };
 		F75A80A0289C238300643587 /* CurrencyConverterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809F289C238300643587 /* CurrencyConverterViewModelTests.swift */; };
+		F75A80A2289C365200643587 /* Conversion.json in Resources */ = {isa = PBXBuildFile; fileRef = F75A80A1289C365200643587 /* Conversion.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		F75A809A289C20F700643587 /* MockCurrentConversionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrentConversionService.swift; sourceTree = "<group>"; };
 		F75A809C289C22C800643587 /* MockCredentialsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCredentialsValidator.swift; sourceTree = "<group>"; };
 		F75A809F289C238300643587 /* CurrencyConverterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModelTests.swift; sourceTree = "<group>"; };
+		F75A80A1289C365200643587 /* Conversion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Conversion.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				F75A809E289C235400643587 /* Tests */,
 				F75A8099289C20D300643587 /* Mock */,
 				F75A80552899535700643587 /* PenquinPayTests.swift */,
+				F75A80A1289C365200643587 /* Conversion.json */,
 			);
 			path = PenquinPayTests;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75A80A2289C365200643587 /* Conversion.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
