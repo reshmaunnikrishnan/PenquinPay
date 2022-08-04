@@ -93,31 +93,14 @@ final class CurrencyConverterViewModel {
      func fetchData(data: ConversionDetail, completion: @escaping (Result<CurrencyConverter, RequestError>) -> Void) {
         Task(priority: .background) {
             let id = "cd9bc7a433ee48c0b97db5ba76ae1705"
+            
+            guard let currencyConverterService = currencyConverterService else {
+                completion(.failure(.invalidURL))
+                return
+            }
             let result = await currencyConverterService.convert(id: id, details: data)
             completion(result)
         }
     }
 }
 
-// MARK: - CredentialsValidatorProtocol
-
-protocol CredentialsValidatorProtocol {
-    func validateCredentials(phoneNumber: String, country: String, completion: @escaping (Result<(), PhoneNumberError>) -> Void)
-}
-
-/// This class acts as an example of asynchronous credentials validation
-
-final class CredentialsValidator: CredentialsValidatorProtocol {
-    
-    func validateCredentials(phoneNumber: String, country: String, completion: @escaping (Result<(), PhoneNumberError>) -> Void) {
-        
-        let country =  Country.allCases.filter{$0.rawValue == country}.first
-        
-        if  phoneNumber.count == country?.getNumberOfDigitsAfterPrefix() {
-            completion(.success(()))
-        } else {
-            completion(.failure(.invalid))
-        }
-    }
-    
-}

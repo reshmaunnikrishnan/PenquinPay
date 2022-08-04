@@ -31,7 +31,6 @@
 		F75A8096289C145700643587 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A8095289C145700643587 /* ResultViewController.swift */; };
 		F75A8098289C189900643587 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75A8097289C189900643587 /* ResultViewController.xib */; };
 		F75A809B289C20F700643587 /* MockCurrentConversionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809A289C20F700643587 /* MockCurrentConversionService.swift */; };
-		F75A809D289C22C800643587 /* MockCredentialsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809C289C22C800643587 /* MockCredentialsValidator.swift */; };
 		F75A80A0289C238300643587 /* CurrencyConverterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A809F289C238300643587 /* CurrencyConverterViewModelTests.swift */; };
 		F75A80A4289C395000643587 /* ConversionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80A3289C395000643587 /* ConversionDetail.swift */; };
 /* End PBXBuildFile section */
@@ -82,7 +81,6 @@
 		F75A8095289C145700643587 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F75A8097289C189900643587 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 		F75A809A289C20F700643587 /* MockCurrentConversionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrentConversionService.swift; sourceTree = "<group>"; };
-		F75A809C289C22C800643587 /* MockCredentialsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCredentialsValidator.swift; sourceTree = "<group>"; };
 		F75A809F289C238300643587 /* CurrencyConverterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModelTests.swift; sourceTree = "<group>"; };
 		F75A80A3289C395000643587 /* ConversionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionDetail.swift; sourceTree = "<group>"; };
 		F75A80A5289C3B8000643587 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				F75A8082289A626100643587 /* CurrencyConvertView */,
 				F75A807E2899C9A000643587 /* ViewModel */,
 				F75A807B2899B95E00643587 /* Model */,
-				F75A80762899A63C00643587 /* Service */,
 				F75A806E2899541C00643587 /* Network */,
 				F75A80442899535500643587 /* Main.storyboard */,
 				F75A80472899535700643587 /* Assets.xcassets */,
@@ -175,6 +172,7 @@
 		F75A806E2899541C00643587 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F75A80762899A63C00643587 /* Service */,
 				F75A80752899A5F800643587 /* Base */,
 			);
 			path = Network;
@@ -266,7 +264,6 @@
 			isa = PBXGroup;
 			children = (
 				F75A809A289C20F700643587 /* MockCurrentConversionService.swift */,
-				F75A809C289C22C800643587 /* MockCredentialsValidator.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -442,7 +439,6 @@
 				F75A80562899535700643587 /* PenquinPayTests.swift in Sources */,
 				F75A80A0289C238300643587 /* CurrencyConverterViewModelTests.swift in Sources */,
 				F75A809B289C20F700643587 /* MockCurrentConversionService.swift in Sources */,
-				F75A809D289C22C800643587 /* MockCredentialsValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
