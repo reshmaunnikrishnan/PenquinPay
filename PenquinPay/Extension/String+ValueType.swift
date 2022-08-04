@@ -17,3 +17,12 @@ extension String {
     var binaryToDouble : Double { return Double(strtoul(self, nil, 2))   }
     var binaryToHexa   : String { return String(binaryToInt, radix: 16)  }
 }
+
+extension Int {
+    var binaryString: String { return String(self, radix: 2)  }
+    var hexaString  : String { return String(self, radix: 16) }
+    var doubleValue : Double { return Double(self) }
+}
+
+
+

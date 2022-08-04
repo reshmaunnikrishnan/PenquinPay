@@ -12,8 +12,8 @@ protocol Endpoint {
     var path: String { get }
     var scheme: String { get }
     var method: RequestMethod { get }
-    var headers: [String: String]? { get }
-    var body: [String: String]? { get }
+    var queryItems: [URLQueryItem]? { get }
+    var header: [String: String]? { get }
 }
 
 extension Endpoint {
