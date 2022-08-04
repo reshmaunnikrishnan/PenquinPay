@@ -8,7 +8,7 @@
 import Foundation
 
 enum CurrencyConverterAPI {
-    case convert(id: String, value: String, from: String, to: String)
+    case convert(id: String, value: Int, from: String, to: String)
 }
 
 extension CurrencyConverterAPI: Endpoint {
