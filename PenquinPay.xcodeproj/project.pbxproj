@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F75A803F2899535500643587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A803E2899535500643587 /* AppDelegate.swift */; };
 		F75A80412899535500643587 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80402899535500643587 /* SceneDelegate.swift */; };
-		F75A80432899535500643587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80422899535500643587 /* ViewController.swift */; };
 		F75A80462899535500643587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75A80442899535500643587 /* Main.storyboard */; };
 		F75A80482899535700643587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75A80472899535700643587 /* Assets.xcassets */; };
 		F75A804B2899535700643587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75A80492899535700643587 /* LaunchScreen.storyboard */; };
@@ -22,6 +21,14 @@
 		F75A80782899A66D00643587 /* CurrencyConverterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80772899A66D00643587 /* CurrencyConverterAPI.swift */; };
 		F75A807A2899B6C600643587 /* CurrencyConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A80792899B6C600643587 /* CurrencyConverterService.swift */; };
 		F75A807D2899B97500643587 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A807C2899B97500643587 /* CurrencyConverter.swift */; };
+		F75A80802899C9B600643587 /* CurrencyConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A807F2899C9B600643587 /* CurrencyConverterViewModel.swift */; };
+		F75A8085289A62A700643587 /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A8083289A62A700643587 /* CurrencyConverterViewController.swift */; };
+		F75A8086289A62A700643587 /* CurrencyConverterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75A8084289A62A700643587 /* CurrencyConverterViewController.xib */; };
+		F75A8088289A933F00643587 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A8087289A933F00643587 /* DropDownView.swift */; };
+		F75A808B289A99C900643587 /* iOSDropDown in Frameworks */ = {isa = PBXBuildFile; productRef = F75A808A289A99C900643587 /* iOSDropDown */; };
+		F75A808E289B159400643587 /* UITextField+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A808D289B159400643587 /* UITextField+Publisher.swift */; };
+		F75A8090289B910F00643587 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A808F289B910E00643587 /* CountryDetails.swift */; };
+		F75A8092289BC60600643587 /* String+ValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A8091289BC60600643587 /* String+ValueType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +52,6 @@
 		F75A803B2899535500643587 /* PenquinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenquinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75A803E2899535500643587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75A80402899535500643587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F75A80422899535500643587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F75A80452899535500643587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F75A80472899535700643587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75A804A2899535700643587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +67,13 @@
 		F75A80772899A66D00643587 /* CurrencyConverterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterAPI.swift; sourceTree = "<group>"; };
 		F75A80792899B6C600643587 /* CurrencyConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterService.swift; sourceTree = "<group>"; };
 		F75A807C2899B97500643587 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		F75A807F2899C9B600643587 /* CurrencyConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModel.swift; sourceTree = "<group>"; };
+		F75A8083289A62A700643587 /* CurrencyConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewController.swift; sourceTree = "<group>"; };
+		F75A8084289A62A700643587 /* CurrencyConverterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyConverterViewController.xib; sourceTree = "<group>"; };
+		F75A8087289A933F00643587 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		F75A808D289B159400643587 /* UITextField+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Publisher.swift"; sourceTree = "<group>"; };
+		F75A808F289B910E00643587 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		F75A8091289BC60600643587 /* String+ValueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValueType.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75A808B289A99C900643587 /* iOSDropDown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,11 +125,13 @@
 		F75A803D2899535500643587 /* PenquinPay */ = {
 			isa = PBXGroup;
 			children = (
+				F75A8081289A621200643587 /* App */,
+				F75A808C289B155100643587 /* Extension */,
+				F75A8082289A626100643587 /* CurrencyConvertView */,
+				F75A807E2899C9A000643587 /* ViewModel */,
 				F75A807B2899B95E00643587 /* Model */,
+				F75A80762899A63C00643587 /* Service */,
 				F75A806E2899541C00643587 /* Network */,
-				F75A803E2899535500643587 /* AppDelegate.swift */,
-				F75A80402899535500643587 /* SceneDelegate.swift */,
-				F75A80422899535500643587 /* ViewController.swift */,
 				F75A80442899535500643587 /* Main.storyboard */,
 				F75A80472899535700643587 /* Assets.xcassets */,
 				F75A80492899535700643587 /* LaunchScreen.storyboard */,
@@ -144,7 +160,6 @@
 		F75A806E2899541C00643587 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				F75A80762899A63C00643587 /* Service */,
 				F75A80752899A5F800643587 /* Base */,
 			);
 			path = Network;
@@ -177,6 +192,43 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F75A807E2899C9A000643587 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F75A807F2899C9B600643587 /* CurrencyConverterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F75A8081289A621200643587 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F75A803E2899535500643587 /* AppDelegate.swift */,
+				F75A80402899535500643587 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F75A8082289A626100643587 /* CurrencyConvertView */ = {
+			isa = PBXGroup;
+			children = (
+				F75A8087289A933F00643587 /* DropDownView.swift */,
+				F75A808F289B910E00643587 /* CountryDetails.swift */,
+				F75A8083289A62A700643587 /* CurrencyConverterViewController.swift */,
+				F75A8084289A62A700643587 /* CurrencyConverterViewController.xib */,
+			);
+			path = CurrencyConvertView;
+			sourceTree = "<group>";
+		};
+		F75A808C289B155100643587 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F75A808D289B159400643587 /* UITextField+Publisher.swift */,
+				F75A8091289BC60600643587 /* String+ValueType.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +245,9 @@
 			dependencies = (
 			);
 			name = PenquinPay;
+			packageProductDependencies = (
+				F75A808A289A99C900643587 /* iOSDropDown */,
+			);
 			productName = PenquinPay;
 			productReference = F75A803B2899535500643587 /* PenquinPay.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +320,9 @@
 				Base,
 			);
 			mainGroup = F75A80322899535500643587;
+			packageReferences = (
+				F75A8089289A99C900643587 /* XCRemoteSwiftPackageReference "iOSDropDown" */,
+			);
 			productRefGroup = F75A803C2899535500643587 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +341,7 @@
 			files = (
 				F75A804B2899535700643587 /* LaunchScreen.storyboard in Resources */,
 				F75A80482899535700643587 /* Assets.xcassets in Resources */,
+				F75A8086289A62A700643587 /* CurrencyConverterViewController.xib in Resources */,
 				F75A80462899535500643587 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,10 +367,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75A8092289BC60600643587 /* String+ValueType.swift in Sources */,
 				F75A807D2899B97500643587 /* CurrencyConverter.swift in Sources */,
 				F75A80782899A66D00643587 /* CurrencyConverterAPI.swift in Sources */,
-				F75A80432899535500643587 /* ViewController.swift in Sources */,
 				F75A80722899573D00643587 /* HTTPClient.swift in Sources */,
+				F75A8085289A62A700643587 /* CurrencyConverterViewController.swift in Sources */,
+				F75A8090289B910F00643587 /* CountryDetails.swift in Sources */,
+				F75A80802899C9B600643587 /* CurrencyConverterViewModel.swift in Sources */,
+				F75A8088289A933F00643587 /* DropDownView.swift in Sources */,
+				F75A808E289B159400643587 /* UITextField+Publisher.swift in Sources */,
 				F75A803F2899535500643587 /* AppDelegate.swift in Sources */,
 				F75A80702899544200643587 /* Endpoint.swift in Sources */,
 				F75A807A2899B6C600643587 /* CurrencyConverterService.swift in Sources */,
@@ -658,6 +722,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F75A8089289A99C900643587 /* XCRemoteSwiftPackageReference "iOSDropDown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jriosdev/iOSDropDown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F75A808A289A99C900643587 /* iOSDropDown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F75A8089289A99C900643587 /* XCRemoteSwiftPackageReference "iOSDropDown" */;
+			productName = iOSDropDown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F75A80332899535500643587 /* Project object */;
 }
