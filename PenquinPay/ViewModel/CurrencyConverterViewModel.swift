@@ -36,7 +36,7 @@ final class CurrencyConverterViewModel {
     
     let currencyConverterService: CurrencyConverterServiceable?
     private var bindings = Set<AnyCancellable>()
-    private var currentConversionQuery: String = " "
+    private var currentConversionQuery: String = ""
 
     // MARK: - Initilaizer
     init(currencyConverterService: CurrencyConverterServiceable) {
@@ -77,7 +77,7 @@ final class CurrencyConverterViewModel {
     func binaryRecipientValue() -> String {
         let value = self.conversionResponse?.rates.filter{ $0.key == recipeintCurrencyType }
         let doubleMoney = moneyToSend.binaryToDouble
-
+    
         let generatedAmount = Double(value?.first?.value ?? 0) * doubleMoney
         let generatedAmountInteger = Int(generatedAmount)
         let binaryAmount = generatedAmountInteger.binaryString

@@ -36,6 +36,13 @@ final class CurrencyConverterViewController: UIViewController {
     }
     
     @IBAction func sendMoneyButtonTapped(_ sender: Any) {
+        if phoneNumberText.text == "" {
+            let alert = UIAlertController(title: "Phone Number not Provided!", message: "Please provide your reciepient phone number to send the money", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (_) in
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
         let resultVC = ResultViewController()
         self.present(resultVC, animated: true)
     }
@@ -70,9 +77,11 @@ final class CurrencyConverterViewController: UIViewController {
             self.sendMoneyText.textPublisher
                 .sink { val in
                     if !val.isEmpty {
-                        self.viewModel.convertCurrencyValue{ 
-                            print("conversion successfull")
+                        self.viewModel.convertCurrencyValue{
                         }
+                    } else {
+                        self.recieveMoneyText.text = ""
+                        self.disableSendButton()
                     }
                 }.store(in: &bindings)
             
@@ -123,13 +132,22 @@ final class CurrencyConverterViewController: UIViewController {
         bindViewToViewModel()
     }
     
+    fileprivate func disableSendButton() {
+        sendButton.isEnabled = false
+        sendButton.alpha = 0.3
+    }
+    
+    fileprivate func enableSendButton() {
+        sendButton.isEnabled = false
+        sendButton.alpha = 0.3
+    }
+    
     private func setupUI() {
         phoneNumberText.textContentType = .telephoneNumber
         self.phoneNumberStatusLabel.numberOfLines = 0
         localCurrencyTypeButton.setTitle(viewModel.localCurrency(), for: .normal)
         localCurrencyTypeButton.isSelected = false
-        sendButton.isEnabled = false
-        sendButton.alpha = 0.3
+        disableSendButton()
     }
     
     private func setupDropDown() {
@@ -161,7 +179,7 @@ final class CurrencyConverterViewController: UIViewController {
                 
         }
         
-        recipientCurrencyTypeField.placeholder = "Currency"
+        recipientCurrencyTypeField.placeholder = "Select Currency"
         recipientCurrencyTypeField.textAlignment = .center
 
 

@@ -4,6 +4,7 @@
 
 Created a simple exercise app which lets you send money to the respective countries.
 It showcases a form which holds the basic info, as well as the money conversion with the locale currency to the recipeint country currency.
+Added dropdown Menu for Country as well as reciepient Country Code.
 
 ### Main Features
   * Worked in MVVM Architecture, tried to seperate responsibilities
