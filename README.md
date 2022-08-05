@@ -16,5 +16,4 @@ It showcases a form which holds the basic info, as well as the money conversion 
 Missing:
 A detailed testing,
 more comments or explanations
-Dependency Injection missing in ViewController
 Due to time crunch, i couldnt  completely check with all the conditions required on the CurrencyConverterView. 
